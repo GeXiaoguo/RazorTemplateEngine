@@ -1,0 +1,20 @@
+﻿@Model RazorTemplateEngine.TheViewModel
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8">
+</head>
+<body>
+    <style>
+    @@page {
+        size: A4 landscape;
+        margin: 0.8cm;
+    }
+
+    .title-img {
+        background: url(data:image/gif;base64,@Model.EncodedImage);
+    }
+    </style>
+    @($"{DateTime.Now}")
+</body>
+</html>
